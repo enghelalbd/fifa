@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.banner {
+  display: flex;
+  background-color: rgb(28, 26, 26);
+  color: white;
+  border-radius: 15px;
+}
+.btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #cc0000;
+}
+.logo {
+  padding: 20px;
+}
+.search img {
+  display: block;
+}

@@ -1,0 +1,50 @@
+.h1 {
+  color: red;
+}
+.box-sizing {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(209, 140, 140);
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+.content-box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+.border-box {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.Fag-green {
+  background-color: green;
+  height: 400px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.red-part {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, 50%);
+}
+
+.white-part {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
