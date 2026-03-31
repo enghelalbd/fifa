@@ -13,6 +13,7 @@
   background-color: rgb(28, 26, 26);
   color: white;
   border-radius: 15px;
+  animation: banner-animation 2s ease-in-out;
 }
 .btn {
   background-color: #ff0000;
@@ -63,6 +64,10 @@
 .up-right {
   background-color: lightblue;
   flex: 1;
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .match-card {
@@ -92,4 +97,70 @@
 .button-card {
   display: flex;
   gap: 20px;
+}
+
+@keyframes banner-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  45% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+  .upcomming {
+    flex-direction: column;
+  }
+  .up-left {
+    flex-direction: row;
+    width: 100%;
+  }
+  .up-left .btn {
+    border: #6e8d6d 1px solid;
+  }
+  .up-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .up-right {
+    grid-template-columns: (2, 1fr);
+  }
+}
+
+/*  Mobile Styles */
+@media (max-width: 768px) {
+  .upcomming {
+    flex-direction: column;
+  }
+  .up-left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .up-left .btn {
+    border: #6e8d6d 1px solid;
+  }
+  .up-right {
+    grid-template-columns: repeat(1fr);
+  }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner .logo {
+    padding: 10px;
+  }
+  .banner .logo h4 {
+    font-size: 50px;
+  }
+  .banner .logo p {
+    font-size: 10px;
+    margin: auto;
+  }
 }
