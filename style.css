@@ -17,6 +17,7 @@
 .btn {
   background-color: #ff0000;
   color: white;
+  width: 140px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -30,4 +31,65 @@
 }
 .search img {
   display: block;
+}
+.upcomming {
+  display: flex;
+  flex: 1;
+
+  margin-top: 20px;
+  background-color: salmon;
+}
+
+.up-left {
+  background-color: lightgreen;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 10px;
+  width: 5px;
+  height: fit-content;
+}
+.up-left .btn:nth-child(1),
+.up-left .btn:nth-child(3) {
+  background-color: white;
+  color: black;
+}
+.up-left .btn:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+.up-right {
+  background-color: lightblue;
+  flex: 1;
+}
+
+.match-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+}
+.match-card img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+.match-card .btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  margin-top: 5px;
+  padding: 18px 12px;
+}
+.match-card p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.button-card {
+  display: flex;
+  gap: 20px;
 }
